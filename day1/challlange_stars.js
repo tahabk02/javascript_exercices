@@ -1,9 +1,7 @@
-let rows = 6;
-
-for (let i = 1; i <= rows; i++) {
-  let row = "";
+for (let i = 1; i <= 6; i++) {
+  let line = "";
   for (let j = 1; j <= i; j++) {
-    row += "* ";
+    line += "* ";
   }
-  console.log(row);
+  console.log(line);
 }
