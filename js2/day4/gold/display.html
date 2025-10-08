@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Display Form Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form Data Received</h1>
+    <section id="dataSection">
+      <!-- Data from form will appear here -->
+    </section>
+
+    <script>
+      // Get URL parameters
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name");
+      const lastname = params.get("lastname");
+
+      // Display data in the section
+      const section = document.getElementById("dataSection");
+      if (name && lastname) {
+        section.innerHTML = `<p>First Name: <strong>${name}</strong></p>
+                           <p>Last Name: <strong>${lastname}</strong></p>`;
+      } else {
+        section.textContent = "No data received.";
+      }
+    </script>
+  </body>
+</html>

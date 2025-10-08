@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTTP & Forms Exercises</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Exercise 1 & 2: HTML Forms</h1>
+
+    <!-- Exercise 1: GET method -->
+    <form action="" method="get">
+      <label for="nameGet">Name:</label>
+      <input type="text" id="nameGet" name="name" placeholder="Your name" />
+
+      <label for="messageGet">Message:</label>
+      <textarea
+        id="messageGet"
+        name="message"
+        rows="4"
+        placeholder="Your message"
+      ></textarea>
+
+      <input type="submit" value="Send (GET)" />
+    </form>
+
+    <!-- Exercise 2: POST method -->
+    <form action="" method="post">
+      <label for="namePost">Name:</label>
+      <input type="text" id="namePost" name="name" placeholder="Your name" />
+
+      <label for="messagePost">Message:</label>
+      <textarea
+        id="messagePost"
+        name="message"
+        rows="4"
+        placeholder="Your message"
+      ></textarea>
+
+      <input type="submit" value="Send (POST)" />
+    </form>
+
+    <h1>Exercise 3: JSON Mario</h1>
+    <pre id="jsonOutput"></pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>
