@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎨 Coloring Squares</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🎨 Coloring Squares</h1>
+
+    <div class="controls">
+      <label>
+        🎨 Choose Color:
+        <input type="color" id="colorPicker" value="#ff4d4d" />
+      </label>
+
+      <label>
+        🔲 Grid Size:
+        <input type="number" id="gridSize" min="5" max="50" value="20" />
+      </label>
+
+      <button id="clearBtn">🧼 Clear Grid</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
